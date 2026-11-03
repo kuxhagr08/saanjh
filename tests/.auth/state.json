@@ -1,0 +1,22 @@
+{
+  "cookies": [],
+  "origins": [
+    {
+      "origin": "http://127.0.0.1:5173",
+      "localStorage": [
+        {
+          "name": "apna_theme",
+          "value": "light"
+        },
+        {
+          "name": "apna_is_demo",
+          "value": "1"
+        },
+        {
+          "name": "apna_customization_v2",
+          "value": "{\"enabledModules\":{\"home\":true,\"messages\":true,\"social\":true,\"vault\":true,\"ai\":true,\"planner\":true,\"growth\":true,\"security\":true},\"mobileTabs\":[\"home\",\"messages\",\"social\",\"planner\",\"vault\"],\"activePreset\":\"standard\",\"glassIntensity\":\"high\"}"
+        }
+      ]
+    }
+  ]
+}

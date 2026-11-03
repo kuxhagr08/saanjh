@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover" />
+    <title>Saanjh — Your Life. Your Space.</title>
+    <meta name="description" content="Privacy-first, local-first personal digital ecosystem. End-to-end encrypted messages, AES-256 file vault, BYOK AI, focus sessions and mindful habits." />
+    <meta name="theme-color" content="#F8F7F5" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Saanjh" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Saanjh — Your Life. Your Space." />
+    <meta property="og:description" content="A privacy-first personal digital ecosystem. Encrypted. Local. Yours." />
+    <meta property="og:type" content="website" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Zero-Flash Theme Script -->
+    <script>
+      (function() {
+        try {
+          var t = localStorage.getItem('apna_theme') || 'light';
+          var isDark = t === 'dark' || t === 'amoled' || (t === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches);
+          var activeTheme = t === 'system' ? (isDark ? 'dark' : 'light') : t;
+          document.documentElement.setAttribute('data-theme', activeTheme);
+          if (isDark) document.documentElement.classList.add('dark');
+        } catch(e) {}
+      })();
+    </script>
+  </head>
+  <body class="bg-apna-bg text-apna-text antialiased min-h-screen">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

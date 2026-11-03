@@ -1,0 +1,12 @@
+{
+  "name": "apna-workspace",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test:overflow": "playwright test tests/layout-overflow.spec.mjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.50.0"
+  }
+}

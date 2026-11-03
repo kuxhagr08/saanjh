@@ -1,0 +1,39 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment variables & secrets
+.env
+.env.local
+.env.*.local
+*.jks
+*.keystore
+
+# Node & Frontend
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+*.tsbuildinfo
+
+# Python & Backend
+backend/venv/
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+backend/db.sqlite3
+backend/staticfiles/
+
+# Android & Mobile artifacts
+frontend/android/.gradle/
+frontend/android/build/
+frontend/android/app/build/
+frontend/android/local.properties
+frontend/android/capacitor-cordova-android-plugins/build/
+*.apk
+*.aab
+
+# Test outputs
+test-results/
+coverage/
